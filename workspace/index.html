@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf_8">
+    <title>이우림은 귀엽습니다.</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <style> 
+      .heart {
+        width: 300px;
+        height: 300px;
+        background: #ea2027;
+        position: relative;
+        margin-left:150px;
+        margin-top:150px;
+        transform: rotate(45deg);
+      }
+      .heart::before,
+      .heart::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        border-radius: 50%;
+        background: #ea2027;
+      }
+      .heart::before {
+        left: -50%;
+      }
+      .heart::after {
+        top: -50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart">
+    </div>
+  </body>
+  </html>
