@@ -1,0 +1,22 @@
+#dday {
+    margin-right: auto;
+    margin-left: auto;
+    border-style:solid;
+    padding: 50px;
+}
+
+.dday1 {
+    width: 200px;
+    height: 150px;
+}
+
+.dday2 {
+    width: 150px;
+    height: 50px;
+}
+.dday3 {
+    text-align: center;
+}
+.dday4 {
+    text-align: right;
+}
