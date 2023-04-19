@@ -1,0 +1,94 @@
+/* 대표로고 크기  */
+.logo {
+    width: 400px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* DDay크기짖ㅇ */
+#menuBar {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* m1로고 hover -----------------*/
+.m1lg img:first-child {
+    display: block;
+  }
+  .m1lg img:last-child {
+    display: none;
+  }
+  
+  .m1lg:hover img:first-child {
+    display: none;
+  }
+  .m1lg:hover img:last-child {
+    display: block;
+  }
+/* m1로고 hover -----------------*/
+
+/* m2로고 hover -----------------*/
+.m2lg img:first-child {
+    display: block;
+  }
+  .m2lg img:last-child {
+    display: none;
+  }
+  
+  .m2lg:hover img:first-child {
+    display: none;
+  }
+  .m2lg:hover img:last-child {
+    display: block;
+  }
+/* m2로고 hover -----------------*/
+
+/* m3로고 hover -----------------*/
+.m3lg img:first-child {
+    display: block;
+  }
+  .m3lg img:last-child {
+    display: none;
+  }
+  
+  .m3lg:hover img:first-child {
+    display: none;
+  }
+  .m3lg:hover img:last-child {
+    display: block;
+  }
+/* m3로고 hover -----------------*/
+
+/* m4로고 hover -----------------*/
+.m4lg img:first-child {
+    display: block;
+  }
+  .m4lg img:last-child {
+    display: none;
+  }
+  
+  .m4lg:hover img:first-child {
+    display: none;
+  }
+  .m4lg:hover img:last-child {
+    display: block;
+  }
+/* m4로고 hover -----------------*/
+
+/* m5로고 hover -----------------*/
+.m5lg img:first-child {
+    display: block;
+  }
+  .m5lg img:last-child {
+    display: none;
+  }
+  
+  .m5lg:hover img:first-child {
+    display: none;
+  }
+  .m5lg:hover img:last-child {
+    display: block;
+  }
+/* m4로고 hover -----------------*/
