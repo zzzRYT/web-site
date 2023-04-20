@@ -3,20 +3,34 @@
     margin-left: auto;
     border-style:solid;
     padding: 50px;
+    border-color: rgb(205,65,96)
+
+}
+.dday1 {
+    height: 150px;
 }
 
-.dday1 {
+.dday1 > td:nth-child(2) {
     width: 200px;
-    height: 150px;
+    text-align: center;
+}
+
+.heart {
+    width: 80px;
 }
 
 .dday2 {
     width: 150px;
     height: 50px;
-}
-.dday3 {
     text-align: center;
 }
+.dday3 {
+    text-align: left;
+}
 .dday4 {
+    height: 80px;
+    text-align: center;
+}
+.dday5 {
     text-align: right;
 }
