@@ -18,9 +18,7 @@ h3 {
   padding-right: 30px;
   padding-right: 30px;
 }
-/* 메뉴 바 ------------------------- */
 
-/* m1로고 hover -----------------*/
 .m1lg img:first-child {
     display: block;
   }
@@ -34,9 +32,7 @@ h3 {
   .m1lg:hover img:last-child {
     display: block;
   }
-/* m1로고 hover -----------------*/
 
-/* m2로고 hover -----------------*/
 .m2lg img:first-child {
     display: block;
   }
@@ -50,9 +46,7 @@ h3 {
   .m2lg:hover img:last-child {
     display: block;
   }
-/* m2로고 hover -----------------*/
 
-/* m3로고 hover -----------------*/
 .m3lg img:first-child {
     display: block;
   }
@@ -66,9 +60,7 @@ h3 {
   .m3lg:hover img:last-child {
     display: block;
   }
-/* m3로고 hover -----------------*/
 
-/* m4로고 hover -----------------*/
 .m4lg img:first-child {
     display: block;
   }
@@ -82,9 +74,7 @@ h3 {
   .m4lg:hover img:last-child {
     display: block;
   }
-/* m4로고 hover -----------------*/
 
-/* m5로고 hover -----------------*/
 .m5lg img:first-child {
     display: block;
   }
@@ -98,4 +88,4 @@ h3 {
   .m5lg:hover img:last-child {
     display: block;
   }
-/* m4로고 hover -----------------*/
+/* 메뉴 바 ------------------------- */

@@ -1,0 +1,35 @@
+/* m1_content_1.htlm------------------ */
+.input_image {
+    width: 100%;
+    height: 80px;
+    background: #dddddd;
+    /* display: flex;
+    justify-content: center;
+        align-items: center; */
+}
+
+.input_image > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.input_image > a > img {
+    width: 80px;
+}
+
+h2{
+    text-align: center;
+}
+
+/* m1_content_1.htlm------------------ */
+
+
+/* m1_content_1_2.htlm------------------ */
+.choiceDate > ul:nth-child(1){
+    width: 100px;
+    height: 30px;
+    background: #dddddd;
+    display: block;
+    justify-content: center;
+}
