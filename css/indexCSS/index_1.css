@@ -12,15 +12,16 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  border-radius: 5%;
-  border: solid;
+  /* border-radius: 5%; */
+  border-style:solid ;
+  border-color: rgb(245, 177, 208);
 }
 
 .login-contain {
   font-family: 'Nanum Brush Script', cursive;
   font-size: 22px;
   margin-top:0 ;
-  width: 100%;
+  max-width: 100%;
   height: 800px;
   background-color: rgb(205, 65, 96);
   display: flex;
@@ -32,12 +33,15 @@ span {
   display: block;
   text-align: center;
   background-color: rgb(205, 65, 96);
-  border-radius: 50%;
 }
 
 button {
   background-color: rgb(245, 177, 208);
   border-color: rgb(205, 65, 96);
+}
+
+.logologin {
+  max-width:50%;
 }
 /* login.html------------------ */
 
@@ -122,10 +126,6 @@ div[class="sidebar"] { /*동적 생성 후 메뉴 바*/
   align-items: center;
 }
 
-span[class="m-l"] { /*메인메뉴*/
-  color: aliceblue;
-  font-size: 35px;
-}
 
 ul[class="m-sl"] { /*서브메뉴*/
   display: flex;
@@ -134,11 +134,25 @@ ul[class="m-sl"] { /*서브메뉴*/
   row-gap: 15px;
   font-family: 'Nanum Brush Script', cursive;
 }
-ul[class="m-sl"] a {
+ul[class="m-sl"] > li > a {
   color: antiquewhite;
   text-decoration: none;
   font-family: 'Nanum Brush Script', cursive;
   font-size: 25px ;
+}
+
+ul[class="m-sl"] > li > a:hover {
+  color: #000000;
+}
+
+a[class="m-l"] { /*메인메뉴*/
+  color: aliceblue;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+a[class="m-l"]:hover {
+  color: #000000;
 }
 /* 동적 메뉴 바 끝 */
 
@@ -160,8 +174,8 @@ ul[class="main-nav"] > li{ /* 메뉴바 content 색, border적용*/
   margin: 5px;
   justify-content: center;  /*글자 중앙 정렬*/
   align-items: center;
-  border-style: solid;
-  border-color: rgb(245, 177, 208);
+  /* border-style: solid; */
+  /* border-color: rgb(245, 177, 208); */
 }
 
 ul[class="main-nav"] > li > a { /*폰트 색, 폰트 적용, 언더바 제거*/
@@ -173,6 +187,7 @@ ul[class="main-nav"] > li > a { /*폰트 색, 폰트 적용, 언더바 제거*/
 
 ul[class="main-nav"] > li:hover{
   background-color: rgb(245, 177, 208);
+  border-radius: 30px;
   font-size: 15px;
   width: 100px;
   height: 60px;
