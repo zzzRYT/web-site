@@ -8,14 +8,41 @@ body {
     display:none; 
   }
 
-/* m1_content_1.htlm------------------ */
+  /* m1_menu----------------------- */
+  ul, li {
+      text-decoration: none;
+      list-style: none;
+  }
+  
+  h3 {
+      font-size: 30px;
+      text-align: center;
+      
+  }
+  
+  .menu {
+      background-color: rgb(205, 65, 96);
+      height: 500px;
+      font-family: 'Nanum Brush Script', cursive;
+      justify-content: center;
+      font-size: 20px;
+  }
+  .menu a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 30px;
+  }
+  
+  .menu a:hover {
+      border-bottom-style: solid;
+      border-color: rgb(245, 177, 208);
+  }
+/* m1_content_1,2.htlm------------------ */
 .input_image {
     width: 100%;
     height: 80px;
     background: #dddddd;
-    /* display: flex;
-    justify-content: center;
-        align-items: center; */
+    font-size: 30px;
 }
 
 .input_image > a {
@@ -28,40 +55,6 @@ body {
     width: 80px;
 }
 
-h2{
-    text-align: center;
-}
-
-
-/* m1_menu----------------------- */
-ul, li {
-    text-decoration: none;
-    list-style: none;
-}
-
-h3 {
-    font-size: 20px;
-    text-align: center;
-    
-}
-
-.menu {
-    background-color: rgb(205, 65, 96);
-    height: 500px;
-    font-family: 'Nanum Brush Script', cursive;
-    justify-content: center;
-}
-.menu a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 30px;
-}
-
-.menu a:hover {
-    border-bottom-style: solid;
-    border-color: rgb(245, 177, 208);
-}
-
 /* m1_content_3.html---------------- */
 .month-grid {
     column-gap: 5px;
@@ -69,11 +62,15 @@ h3 {
     padding: 10px;
     background-color: rgb(205, 65, 96);
     border-radius: 5px;
+    max-width: 100%;
+    justify-content: center;
+    column-gap: 10px;
 }
 
 .month-grid  a {
     text-decoration: none;
     color: aliceblue;
+    font-size: 25px;
 }
 
 .month-grid a:hover{
