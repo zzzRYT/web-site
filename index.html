@@ -8,43 +8,52 @@
     <link type="text/css" rel="stylesheet" href="./css/indexCSS/index_1.css">
 </head>
 <body>
-    <h3><a href="./index.html"><img class="logo" src="./images/logo.png" alt="TrueLoveLogo"></a></h3>
-    <hr>
-    <table class="menu_bar">
-        <tr>
-            <td>
-                <a class="m1lg" href="./m1/m1_frame.html" target="main">
-                    <img src="./images/m1Logo.png" alt="사진첩">
-                    <img src="./images/m1Logo_over.png" alt="사진첩">
-                </a>
-            </td>
-            <td>
-                <a class="m2lg" href="./m2/m2_frame.html" target="main">
-                    <img src="./images/m2Logo.png" alt="장소">
-                    <img src="./images/m2Logo_over.png" alt="장소">
-                </a>
-            </td>  
-            <td>
-                <a class="m3lg" href="./m3/m3_frame.html" target="main">
-                    <img src="./images/m3Logo.png" alt="달력">
-                    <img src="./images/m3Logo_over.png" alt="달력">
-                </a>
-            </td>
-            <td>
-                <a class="m4lg" href="./m4/m4_frame.html" target="main">
-                    <img src="./images/m4Logo.png" alt="커플쇼핑몰">
-                    <img src="./images/m4Logo_over.png" alt="커플쇼핑몰">
-                </a>
-            </td>
-            <td>
-                <a class="m5lg" href="./m5/m5_frame.html" target="main">
-                    <img src="./images/m5Logo.png" alt="게시판">
-                    <img src="./images/m5Logo_over.png" alt="게시판">
-                </a>
-            </td>
-        </tr>
-    </table> 
-    <hr>
-    <iframe src="./main.html" name="main" width="100%" height="800" frameborder="0"></iframe>
+  <div class="sidebar-2">
+    <ul class="main-nav">
+      <a href="./index.html"><img class="logo" src="./images/logo.png" alt="TrueLoveLogo"></a>
+      <li><a href="./m1/m1_frame.html" target="main">사진첩</a></li>
+      <li><a href="./m2/m2_frame.html" target="main">장소</a></li>
+      <li><a href="./m3/m3_frame.html" target="main">달력</a></li>
+      <li><a href="./m4/m4_frame.html" target="main">커플쇼핑몰</a></li>
+      <li><a href="./m5/m5_frame.html" target="main">게시판</a></li>
+      <li><a href="./login.html">로그인 화면으로 이동</a></li>
+    </ul>
+  </div>
+  <input type="checkbox" id="menuicon">
+  <label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="sidebar">
+    <ul class="m-sl"><span class="m-l">사진첩</span>
+      <li><a href="./m1/m1_content_frame_1.html" target="main">사진 업로드</a></li>
+      <li><a href="./m1/m1_content_frame_2.html" target="main">사진 삭제</a></li>
+      <li><a href="./m1/m1_content_frame_3.html" target="main">월 별 사진보기</a></li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">장소</span>
+      <li><a href="./m2/m2_content_frame_1.html" target="main">지역별 명소</a></li>
+      <li><a href="./m2/m2_content_frame_2.html" target="main">지역별 맛집</a></li>
+      <li>&nbsp;</li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">달력</span>
+      <li><a href="./m3/m3_content_frame_1.html" target="main">일정 달력</a></li>
+      <li><a href="./m3/m3_content_frame_2.html" target="main">기념일</a></li>
+      <li>&nbsp;</li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">커플 쇼핑몰</span>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">커플 아이템</a></li>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">기념일 상품</a></li>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">생일 상품</a></li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">게시판</span>
+      <li><a href="./m5/m5_frame.html" target="main">잡담</a></li>
+      <li><a href="./m5/m5_content_frame_1.html" target="main">블로그1</a></li>
+      <li><a href="./m5/m5_content_frame_2.html" target="main">블로그2</a></li>
+    </ul>
+  </div>
+  <br>
+  <iframe src="./main.html" name="main" width="100%" height="800" frameborder="0"></iframe>
+
 </body> 
 </html>

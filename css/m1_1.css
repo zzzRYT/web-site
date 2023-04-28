@@ -1,3 +1,10 @@
+body {
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display:none; 
+  }
+
 /* m1_content_1.htlm------------------ */
 .input_image {
     width: 100%;
@@ -22,14 +29,34 @@ h2{
     text-align: center;
 }
 
-/* m1_content_1.htlm------------------ */
 
+/* m1_menu----------------------- */
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+.menu {
+    background-color: rgb(245, 147, 208);
+}
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
-/* m1_content_1_2.htlm------------------ */
-.choiceDate > ul:nth-child(1){
-    width: 100px;
-    height: 30px;
-    background: #dddddd;
-    display: block;
-    justify-content: center;
+/* m1_content_3.html---------------- */
+.month-grid {
+    column-gap: 5px;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(205, 65, 96);
+    border-radius: 5px;
+}
+
+.month-grid  a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.month-grid a:hover{
+    color: #000000;
 }
