@@ -2,9 +2,10 @@
 
 body {
     font-family: 'Nanum Brush Script', cursive;
+    -ms-overflow-style: none;
 }
 
-ul, li {
+ul, li , a{
     text-decoration: none;
     list-style: none;
 }
@@ -29,4 +30,66 @@ h3 {
 .menu a:hover {
     border-bottom-style: solid;
     border-color: rgb(245, 177, 208);
+}
+
+/* m2_map */
+div[class="m2-map"] > ul{
+    column-gap: 5px;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(205, 65, 96);
+    border-radius: 5px;
+    max-width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+div[class="m2-map"]  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+div[class="m2-map"] a:hover{
+    color: #000000;
+}
+
+div[class="map"]{
+    border:0;
+}
+
+ul[class="submenu"]  a{
+    font-size: 20px;
+}
+
+ul[class="submenu"]  a:hover{
+    color: #000000;
+    border-style: none;
+}
+
+span {
+    font-size: 35px;
+    color: rgb(205, 65, 96);
+}
+
+/* m2-location */
+
+table[class="m2-location"] td {
+    max-width: 80%;
+    height: 40px;
+    text-align: center;
+}
+
+table[class="m2-location"] img {
+    width: 300px;
+    height: 180px;
+}
+
+td[class="m2-location-name"] > a{
+    font-size: 30px;
+    color: #000000;
+}
+td[class="m2-location-name"] > a:hover{
+    background-color: rgb(205, 65, 96);
+    border-radius: 30px;
 }
