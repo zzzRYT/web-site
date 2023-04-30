@@ -55,7 +55,9 @@ div[class="m2-map"] a:hover{
 }
 
 div[class="map"]{
-    border:0;
+    border: 5px;
+    border-color: rgb(205, 65, 96);
+    border-style: solid;
 }
 
 ul[class="submenu"]  a{
@@ -93,3 +95,24 @@ td[class="m2-location-name"] > a:hover{
     background-color: rgb(205, 65, 96);
     border-radius: 30px;
 }
+
+/* food.html */
+
+div[class="food"] {
+    border:5px;
+    border-style: solid;
+    border-color: rgb(205, 65, 96);
+    background-color: rgb(245, 177, 208);
+    border-bottom: none;
+}
+
+div[class="food"] p {
+    font-size: 24px;
+}
+
+div[class="map-food"] {
+    border: 5px;
+    border-color: rgb(205, 65, 96);
+    border-style: solid;
+}
+
