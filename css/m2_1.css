@@ -74,6 +74,9 @@ span {
     color: rgb(205, 65, 96);
 }
 
+div[class="m2-map"] p {
+    font-size: 25px;
+}
 /* m2-location */
 
 table[class="m2-location"] td {
@@ -115,4 +118,5 @@ div[class="map-food"] {
     border-color: rgb(205, 65, 96);
     border-style: solid;
 }
+
 

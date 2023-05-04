@@ -198,7 +198,8 @@ ul[class="main-nav"] > li:hover{
   margin: 5px;
   justify-content: center;
   align-items: center;
-  text-decoration: none; 
+  text-decoration: none;
+  transition: ease 0.1s;
 }
 
 .logo {
