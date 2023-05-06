@@ -34,14 +34,12 @@ h3 {
 
 /* m2_map */
 div[class="m2-map"] > ul{
-    column-gap: 5px;
     display: flex;
     padding: 10px;
     background-color: rgb(205, 65, 96);
     border-radius: 5px;
     max-width: 100%;
     justify-content: center;
-    column-gap: 10px;
 }
 
 div[class="m2-map"]  a {

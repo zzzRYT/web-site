@@ -72,7 +72,7 @@ tr[class="y-m-d"] button{
 }
 
 div[class="memo"] {
-    background-color: rgb(245, 177, 208);
+    background-color: #dddddd;
     border-style: solid;
     border-radius: 30px;
     border-color: rgb(205, 65, 96);
