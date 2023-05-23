@@ -36,24 +36,18 @@ body {
       border-color: rgb(245, 177, 208);
   }
 /* m1_content_1,2.htlm------------------ */
-.input_image > a{
+.input_image{
     width: 100%;
-    height: 80px;
+    height: 40px;
     background: #dddddd;
     font-size: 30px;
     color: #000000;
+    border-radius: 30px;
+    text-align: center;
 }
-
-.input_image > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.input_image > a > img {
+.input_image img {
     width: 80px;
 }
-
 /* m1_content_3.html---------------- */
 .month-grid {
     column-gap: 5px;
@@ -87,4 +81,13 @@ div[class="month-img"] {
 
 div[class="month-img"] tr:nth-child(1) > td{
     font-size: 40px;
+}
+
+.delbox span { 
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: rgb(245, 177, 208);
 }

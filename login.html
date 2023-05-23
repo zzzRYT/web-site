@@ -13,12 +13,26 @@
         <div class="login">
             <form name="fo" method="get">
                 <span>로그인</span><br>
-                사용자 ID : <input type="text" size="15" value=""><br>
-                비밀 번호 : <input type="password" size="15" value="">
-                           <a href="./index.html"><button type="button">로그인</button></a>
-                           <!-- js로 로그인 기능 추후 추가 -->
+                사용자 ID : <input type="id" name="id" size="15" value="" id="id_" placeholder="아이디를 입력하세요."><br>
+                비밀 번호 : <input type="password" name="pass" size="15" value="" id="pass_" placeholder="비밀번호를 입력하세요.">
+                <button type="button" id="login">로그인</button>
+                <script>
+                    document.getElementById('login').onclick = function() {
+                        let ID = document.getElementById('id_').value;
+                        let pass = document.getElementById('pass_').value;
+                        if (ID == 'hsj37' && pass == 'hsj37*hsj37') {
+                            window.location.href = './index.html';
+                        } else {
+                            alert('로그인 실패!\n아이디, 패스워드를 확인하세요.');
+                        }
+                    }
+                </script>
             </form>
         </div>
+        <p>
+            ID : hsj37<br>
+            PW : hsj37*hsj37
+        </p>
 </div>
 </body>
 </html>

@@ -11,23 +11,35 @@
     <table id="dday">
         <tr class="dday1">
             <td><img src="./images/humanImg.png" alt="인물사진1"></td>
-            <td rowspan="2"><img src="./images/heart.png" alt="하트" class="heart"></td>
+            <td colspan="2"><img src="./images/heart.png" alt="하트" class="heart"></td>
             <td><img src="./images/humanImg.png" alt="인물사진2"></td>
         </tr>
         <tr class="dday2">
-            <td><input type="text" size="15px" value="이름입력1"></td>
-            <td><input type="text" size="15px" value="이름입력2"></td>
+                <td><div id="name1"></div></td>
+                <td><input class=name_box type="button" size="15px" value="<=이름입력" onclick="
+                    let name1 = prompt('이름을 입력 : ');
+                    document.getElementById('name1').innerText = name1;
+                    document.getElementById('name1').style.fontSize = '30px';
+                    document.getElementById('name1').style.textAlign = 'center';
+                    "></td>
+                <td><input class=name_box type="button" size="15px" value="이름입력=>" onclick="
+                let name2 = prompt('이름을 입력 : ');
+                document.getElementById('name2').innerText = name2;
+                document.getElementById('name2').style.fontSize = '30px';
+                document.getElementById('name2').style.textAlign = 'center';
+                " style="margin-left:24px;"></td>
+                <td><div id="name2"></div></td>
         </tr>
         <tr class="dday3">
             <!-- <td colspan="3"><img src="./images/loveTime.png" alt="사랑한 지"></td> -->
-            <td colspan="3">
+            <td colspan="4">
                 <div class="font">
                     사랑한 지
                 </div>
             </td>
         </tr>
         <tr class="dday4">
-            <td colspan="3" >
+            <td colspan="4" >
                 <div>
                     D+Day기능(js로 구현)
                 </div>
@@ -35,7 +47,7 @@
         </tr>
         <tr class="dday5">
             <!-- <td colspan="3"><img src="./images/longday.png" alt="일 째"></td> -->
-            <td colspan="3">
+            <td colspan="4">
                 <div class="font">
                     일 째
                 </div>
