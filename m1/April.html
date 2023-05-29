@@ -8,39 +8,35 @@
     <link type="text/css" rel="stylesheet" href="../css/m1_1.css">
 </head>
 <body>
+    <p class="m-title">April</p>
+    <p class="font">사진추가</p><input type="file" id="fileInput"/>
     <div class="month-img">
-        <table>
-            <tr>
-                <td colspan=3>April</td>
-            </tr>
-            <tr class="delbox">    <!--사진 부분 -->
-                <td>
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <img src="../images/m1_content.png" alt="사진1">
-                    </div>
-
-                </td>
-                <td><img src="https://media.istockphoto.com/id/616891550/ko/%EC%82%AC%EC%A7%84/%EC%83%89%EC%83%81%ED%99%94-%EA%B2%A8%EC%9A%B8%EB%A7%9E%EC%9D%B4-%ED%95%B4%EC%A7%88%EB%85%98%EA%B9%8C%EC%A7%80.jpg?s=612x612&w=0&k=20&c=4JL9zZF0u5EkfdOaFhc5uMUvwPmAGLOM26OVVHiRQ0k=" width="300px" alt="1월 사진"></div></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-04-11</td>
-                <td>23-04-11</td>
-                <td>23-04-12</td>
-            </tr>
-            <tr>    <!--사진부분-->
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-04-12</td>
-                <td>23-04-13</td>
-                <td>23-04-13</td>
-            </tr>
-        </table>
+        <div><img src="https://cdn.pixabay.com/photo/2016/03/09/09/18/eggs-1245719_1280.jpg" alt="4월사진"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2020/04/19/06/53/spring-5062124_1280.jpg" alt="4월사진"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2020/04/24/00/49/yellow-5084544_1280.jpg" alt="4월사진"></div>
+        <div id="pictures"></div><br>
     </div>
 </body>
+<script>
+    var fileInput = document.getElementById("fileInput");
+    //값이 변경될때 호출 되는 이벤트 리스너
+    fileInput.addEventListener('change',function(e){
+      var file = e.target.files[0]; //선택된 파일
+      var reader = new FileReader();
+      reader.readAsDataURL(file); //파일을 읽는 메서드
+  
+      reader.onload = function(){
+        var photoFrame = document.createElement("div");
+        photoFrame.style = `background : url(${reader.result}); background-size : contain; background-repeat : no-repeat; background-position : center center`;
+        photoFrame.className = "photoFrame";
+        document.getElementById("pictures").appendChild(photoFrame);
+        e.target.value = "";
+  
+      //   photoFrame.addEventListener("click",function(){
+      //     document.getElementById("pictures").removeChild(photoFrame);
+      //   })
+      }
+    })
+  </script>
+  
 </html>

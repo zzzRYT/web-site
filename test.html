@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 폰트 */
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+    /* font-family: 'Nanum Brush Script', cursive; */
+    /* 동적 메뉴 아이콘 */
+    
+    input[id="menuicon"] {
+      display: none;
+    }
+    input[id="menuicon"] + label{ /*아이콘 동적 변화*/
+      display: block;
+      width: 60px;
+      height: 40px;
+      position: fixed;
+      right:0;
+      top:calc(20px);
+      right: calc(15px);
+      cursor: pointer;
+      transition: all .45s;
+    }
+
+    input[id="menuicon"]:checked + label{ /*아이콘 위치(index2)*/
+      z-index: 2; /*index1보다 위에 위치*/
+      top:195px
+    }
+
+    input[id="menuicon"] + label span { /*동적 메뉴바 생성*/
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      border-radius: 30px;
+      background-color: rgb(245, 177, 208);
+      transition: all .45s;
+    }
+
+    /* input 시 변화 */
+    input[id="menuicon"] + label span:nth-child(1) {
+      top: 0;
+    }
+    input[id="menuicon"] + label span:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3) {
+      bottom: 0;
+    }
+
+    #menuicon:checked + label span:nth-child(1) {
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+    }
+    #menuicon:checked + label span:nth-child(2) {
+      opacity: 0;
+    }
+    #menuicon:checked + label span:nth-child(3) {
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg);
+    }
+  /* 동적 메뉴 아이콘 끝 */
+
+  /* 동적 메뉴 바 */
+    div[class="sidebar"] { /*동적 메뉴바 설정*/
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 250px;
+      background: rgb(205, 65, 96)  ;
+      position: fixed;
+      top: -250px;
+      left: 0;
+      z-index: 1;
+      transition: all .45s;
+      opacity: 0.9;
+    }
+
+    input[id="menuicon"]:checked + label + div{ /*아이콘 위치*/
+      top: 0;
+    }
+    div[class="sidebar"] { /*동적 생성 후 메뉴 바*/
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span[class="m-l"] { /*메인메뉴*/
+      font-size: 20px;
+      color: aliceblue;
+    }
+
+    ul[class="m-sl"] { /*서브메뉴*/
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      row-gap: 15px;
+    }
+    ul[class="m-sl"] a {
+      color: antiquewhite;
+      text-decoration: none;
+    }
+    /* 동적 메뉴 바 끝 */
+
+    ul[class="main-nav"] { /*메뉴 바 배경 색, 간격 조정*/
+      flex-wrap: wrap; /*페이지 크기에 따른 동적 변화*/
+      display: flex ;
+      background-color: rgb(205, 65, 96);
+      margin: 0;
+      padding: 0;
+      column-gap: 50px;
+    }
+
+    ul[class="main-nav"] > li{ /* 메뉴바 content 색, border적용*/
+      display: flex;  
+      background-color: rgb(205, 65, 96);
+      font-size: 15px;
+      width: 100px;
+      height: 60px;
+      margin: 5px;
+      justify-content: center;  /*글자 중앙 정렬*/
+      align-items: center;
+      border-style: solid;
+      border-color: rgb(245, 177, 208);
+    }
+
+    ul[class="main-nav"] > li > a { /*폰트 색, 폰트 적용, 언더바 제거*/
+      color: aliceblue;
+      text-decoration: none;
+      font-family: 'Nanum Brush Script', cursive;
+      font-size: 30px;
+    }
+
+    ul[class="main-nav"] > li:hover{
+      background-color: rgb(245, 177, 208);
+      font-size: 15px;
+      width: 100px;
+      height: 60px;
+      margin: 5px;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; 
+    }
+
+    .logo {
+      margin-top: 5px;
+      margin-left: 5px;
+      width: 300px;
+      height: 70px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="sidebar-2">
+    <ul class="main-nav">
+      <a href="./index.html"><img class="logo" src="./images/logo.png" alt="TrueLoveLogo"></a>
+      <li><a href="./m1/m1_frame.html" target="main">사진첩</a></li>
+      <li><a href="./m2/m2_frame.html" target="main">장소</a></li>
+      <li><a href="./m3/m3_frame.html" target="main">달력</a></li>
+      <li><a href="./m4/m4_frame.html" target="main">커플쇼핑몰</a></li>
+      <li><a href="./m5/m5_frame.html" target="main">게시판</a></li>
+      <li><a href="./login.html">로그인 화면으로 이동</a></li>
+    </ul>
+  </div>
+  <input type="checkbox" id="menuicon">
+  <label for="menuicon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="sidebar">
+    <ul class="m-sl"><span class="m-l">사진첩</span>
+      <li><a href="./m1/m1_content_frame_1.html" target="main">사진 업로드</a></li>
+      <li><a href="./m1/m1_content_frame_2.html" target="main">사진 삭제</a></li>
+      <li><a href="./m1/m1_content_frame_3.html" target="main">월 별 사진보기</a></li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">장소</span>
+      <li><a href="./m2/m2_content_frame_1.html" target="main">지역별 명소</a></li>
+      <li><a href="./m2/m2_content_frame_2.html" target="main">지역별 맛집</a></li>
+      <li>&nbsp;</li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">달력</span>
+      <li><a href="./m3/m3_content_frame_1.html" target="main">일정 달력</a></li>
+      <li><a href="./m3/m3_content_frame_2.html" target="main">기념일</a></li>
+      <li>&nbsp;</li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">커플 쇼핑몰</span>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">커플 아이템</a></li>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">기념일 상품</a></li>
+      <li><a href="./m4/m4_content_frame_1.html" target="main">생일 상품</a></li>
+    </ul>
+    <ul class="m-sl"><span class="m-l">게시판</span>
+      <li><a href="./m5/m5_frame.html" target="main">잡담</a></li>
+      <li><a href="./m5/m5_content_frame_1.html" target="main">블로그1</a></li>
+      <li><a href="./m5/m5_content_frame_2.html" target="main">블로그2</a></li>
+    </ul>
+  </div>
+  <br>
+  <iframe src="./main.html" name="main" width="100%" height="800" frameborder="0"></iframe>
+
+</body>
+</html>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.7563322188053!2d127.05482490000001!3d37.631419099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbbe5f3843891%3A0x2a334389e7cd7a44!2z7J24642V64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1682744691365!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

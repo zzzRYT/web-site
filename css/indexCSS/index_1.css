@@ -189,7 +189,7 @@ ul[class="main-nav"] > li > a { /*폰트 색, 폰트 적용, 언더바 제거*/
   font-size: 30px;
 }
 
-ul[class="main-nav"] > li:hover{
+ul[class="main-nav"] li:hover{
   background-color: rgb(245, 177, 208);
   border-radius: 30px;
   font-size: 15px;
@@ -208,6 +208,28 @@ ul[class="main-nav"] > li:hover{
   width: 300px;
   height: 70px;
 }
+
+#night_day {
+  width: 80px;
+  border: none;
+  background-color: rgb(205,65,96);
+  height: 60px;
+  color: aliceblue;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 35px;
+}
+#night_day:hover, .main-nav > li:hover {
+  width: 80px;
+  border: none;
+  background-color: rgb(245, 177, 208);
+  border-radius: 30px;
+  height: 60px;
+  color: aliceblue;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 35px;
+  transition: ease 0.1s;
+}
+
 
 /* 메뉴바------------------------------- */
 

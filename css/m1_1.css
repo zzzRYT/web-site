@@ -17,11 +17,13 @@ body {
   h3 {
       font-size: 30px;
       text-align: center;
+      background-color: rgb(245, 177, 208);
+      border-radius: 30px;
   }
   
   .menu {
       background-color: rgb(205, 65, 96);
-      height: 500px;
+      height: 800px;
       justify-content: center;
       font-size: 20px;
   }
@@ -70,24 +72,53 @@ body {
     color: #000000;
 }
 
-
-/* month-img */
-div[class="month-img"] {
+/*기존에 남아있는 사진들*/
+.month-img {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    font-size: 25px;
+    align-items: center;
 }
 
-div[class="month-img"] tr:nth-child(1) > td{
-    font-size: 40px;
+.month-img  img{
+    width: 300px;
+    height: 180px;
+    object-fit: contain;
+    border: 3px solid rgb(245, 177, 208);
 }
 
-.delbox span { 
-    display: block;
-    position: absolute;
-    width: 15px;
-    height: 5px;
+/*추가되는 사진들css*/
+.photoFrame{
+    width: 500px;
+    height: 500px;
+  }
+
+  #pictures {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .photoFrame {
+      width: 300px;
+      height: 180px;
+      border: 3px solid rgb(245, 177, 208);
+      position: 50% 50%;
+  }
+
+  .m-title {
+    font-size: 33px;
+    background-color: rgb(205, 65, 96);
     border-radius: 30px;
-    background-color: rgb(245, 177, 208);
-}
+    width: 120px;
+    text-align: center;
+  }
+  
+  .font {
+    font-size: 20px;
+    background-color: aliceblue;
+    border-radius:20px ;
+    width: 80px;
+    text-align: center;
+  }

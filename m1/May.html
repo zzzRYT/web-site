@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../css/m1_1.css">
-
 </head>
 <body>
+    <p class="m-title">May</p>
+    <p class="font">사진추가</p>
+    <input type="file" id="fileInput"/>
     <div class="month-img">
-        <table>
-            <tr>
-                <td colspan="3">May</td>
-            </tr>
-            <tr>    <!--사진 부분 -->
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-05-11</td>
-                <td>23-05-11</td>
-                <td>23-05-12</td>
-            </tr>
-            <tr>    <!--사진부분-->
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-05-12</td>
-                <td>23-05-13</td>
-                <td>23-05-13</td>
-            </tr>
-        </table>
+        <div><img src="https://as1.ftcdn.net/v2/jpg/02/74/44/12/1000_F_274441233_pyZxLWRGb5UDFTO3baZJZDn0WA6KMd62.jpg" alt="5월사진"></div>
+        <div><img src="https://as2.ftcdn.net/v2/jpg/05/74/62/69/1000_F_574626929_RjfdnLby409Qex6AzowHt6O0e2wudl3K.jpg" alt="5월사진"></div>
+        <div><img src="https://as2.ftcdn.net/v2/jpg/05/98/53/63/1000_F_598536306_vZ9rk2w9Tabu0xlytO893SDMFpQnBS5s.jpg" alt="5월사진"></div>
+        <div id="pictures"></div><br>
     </div>
 </body>
+<script>
+    var fileInput = document.getElementById("fileInput");
+    //값이 변경될때 호출 되는 이벤트 리스너
+    fileInput.addEventListener('change',function(e){
+      var file = e.target.files[0]; //선택된 파일
+      var reader = new FileReader();
+      reader.readAsDataURL(file); //파일을 읽는 메서드
+  
+      reader.onload = function(){
+        var photoFrame = document.createElement("div");
+        photoFrame.style = `background : url(${reader.result}); background-size : contain; background-repeat : no-repeat; background-position : center center`;
+        photoFrame.className = "photoFrame";
+        document.getElementById("pictures").appendChild(photoFrame);
+        e.target.value = "";
+  
+      //   photoFrame.addEventListener("click",function(){
+      //     document.getElementById("pictures").removeChild(photoFrame);
+      //   })
+      }
+    })
+  </script>
+  
 </html>

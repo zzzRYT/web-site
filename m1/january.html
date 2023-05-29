@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../css/m1_1.css">
-
 </head>
 <body>
+    <p class="m-title">January</p>
+    <p class="font">사진추가</p>
+    <input type="file" id="fileInput"/>
     <div class="month-img">
-        <table>
-            <tr>
-                <td colspan="3">January</td>
-            </tr>
-            <tr>    <!--사진 부분 -->
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-01-11</td>
-                <td>23-01-11</td>
-                <td>23-01-12</td>
-            </tr>
-            <tr>    <!--사진부분-->
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-                <td><img src="../images/m1_content.png" alt="사진1"></td>
-            </tr>
-            <tr>    <!--날짜부분-->
-                <td>23-01-12</td>
-                <td>23-01-13</td>
-                <td>23-01-13</td>
-            </tr>
-        </table>
+        <div><img src="https://cdn.pixabay.com/photo/2015/02/19/18/15/snow-642454_1280.jpg" alt="1월사진"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2019/01/20/19/40/frost-3944523_1280.jpg" alt="1월사진"></div>
+        <div><img src="https://cdn.pixabay.com/photo/2023/01/03/08/30/common-kingfisher-7693876_1280.jpg" alt="1월사진"></div>
+        <div id="pictures"></div><br>
     </div>
 </body>
+<script>
+    var fileInput = document.getElementById("fileInput");
+    //값이 변경될때 호출 되는 이벤트 리스너
+    fileInput.addEventListener('change',function(e){
+      var file = e.target.files[0]; //선택된 파일
+      var reader = new FileReader();
+      reader.readAsDataURL(file); //파일을 읽는 메서드
+  
+      reader.onload = function(){
+        var photoFrame = document.createElement("div");
+        photoFrame.style = `background : url(${reader.result}); background-size : contain; background-repeat : no-repeat; background-position : center center`;
+        photoFrame.className = "photoFrame";
+        document.getElementById("pictures").appendChild(photoFrame);
+        e.target.value = "";
+  
+      //   photoFrame.addEventListener("click",function(){
+      //     document.getElementById("pictures").removeChild(photoFrame);
+      //   })
+      }
+    })
+  </script>
+  
 </html>

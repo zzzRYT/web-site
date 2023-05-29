@@ -13,6 +13,8 @@ ul, li , a{
 h3 {
     font-size: 30px;
     text-align: center;
+    background-color: rgb(245, 177, 208);
+    border-radius: 30px;
 }
 
 .menu {

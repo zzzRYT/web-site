@@ -13,6 +13,18 @@ ul, li , a{
 h3 {
     font-size: 30px;
     text-align: center;
+    background-color: rgb(245, 177, 208);
+    border-radius: 30px;
+}
+
+.font {
+    font-size: 30px;
+    color: #000000;
+}
+
+p[class="bg"] {
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
 .menu {
@@ -91,9 +103,11 @@ table[class="m2-location"] img {
 td[class="m2-location-name"] > a{
     font-size: 30px;
     color: #000000;
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 td[class="m2-location-name"] > a:hover{
-    background-color: rgb(205, 65, 96);
+    background-color: rgb(245, 177, 208);
     border-radius: 30px;
 }
 
@@ -103,7 +117,7 @@ div[class="food"] {
     border:5px;
     border-style: solid;
     border-color: rgb(205, 65, 96);
-    background-color: rgb(245, 177, 208);
+    background-color: rgb(205, 65, 96);
     border-bottom: none;
 }
 
