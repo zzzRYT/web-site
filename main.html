@@ -7,7 +7,6 @@
     <title>메인메뉴</title>
     <link type="text/css" rel="stylesheet" href="./css/indexCSS/index_1.css">
     <script src="./js/main.js" type="text/javascript"></script>
-
 </head>
 <body>
     <table id="dday">
@@ -25,10 +24,10 @@
                     document.getElementById('name1').style.textAlign = 'center';
                     "></td>
                 <td><input class=name_box type="button" size="15px" value="이름입력=>" onclick="
-                let name2 = prompt('이름을 입력 : ');
-                document.getElementById('name2').innerText = name2;
-                document.getElementById('name2').style.fontSize = '30px';
-                document.getElementById('name2').style.textAlign = 'center';
+                    let name2 = prompt('이름을 입력 : ');
+                    document.getElementById('name2').innerText = name2;
+                    document.getElementById('name2').style.fontSize = '30px';
+                    document.getElementById('name2').style.textAlign = 'center';
                 " style="margin-left:24px;"></td>
                 <td><div id="name2"></div></td>
         </tr>
@@ -42,9 +41,9 @@
         </tr>
         <tr class="dday4">
             <td colspan="4" >
-                <div>
-                    D+Day기능(js로 구현)
-                </div>
+                <input id="input_date" type="date">
+                <input id="input_submit" type="submit" onclick="input()" value="확인">
+                <div id="love" >일</div>
             </td>   <!--추후 js로 기능구현 dday기능 구현 달력과 연동가능-->
         </tr>
         <tr class="dday5">
