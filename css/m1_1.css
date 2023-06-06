@@ -81,10 +81,17 @@ body {
 }
 
 .month-img  img{
-    width: 300px;
-    height: 180px;
-    object-fit: contain;
-    border: 3px solid rgb(245, 177, 208);
+  width: 300px;
+  height: 180px;
+  object-fit: contain;
+  border: 3px solid rgb(245, 177, 208);
+}
+
+.month-img img:hover {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 /*추가되는 사진들css*/
@@ -107,6 +114,12 @@ body {
       position: 50% 50%;
   }
 
+  .photoFrame:hover {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
   .m-title {
     font-size: 33px;
     background-color: rgb(205, 65, 96);
@@ -121,4 +134,20 @@ body {
     border-radius:20px ;
     width: 80px;
     text-align: center;
+  }
+
+  .coma {
+    font-size: 35px;
+  }
+
+  /* m1-thema */
+  .thema1 > input {
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: rgb(245, 177, 208);
+    border: solid rgb(245, 177, 208);
+  }
+
+  .thema1 > input:hover {
+    cursor: pointer;
   }

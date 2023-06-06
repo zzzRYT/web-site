@@ -35,43 +35,7 @@ h3 {
 }
 
 /* m3_content_1.html */
-div[class="calen"] {
-    border: 5px;
-    color: rgb(205, 65, 96);
-    max-width: 100%;
-    background-color: rgb(245, 177, 208);
-    border-style: solid;
-    border-radius: 30px;
-    text-align: center;
-}
 
-div[class="calen"] > table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div[class="calen"] td,a {
-    font-size: 35px;
-    color: #000000;
-    padding: 6px;
-}
-
-div[class="calen"] a:hover {
-    color: aliceblue;
-}
-
-tr[class="y-m-d"] td{
-    font-size:40px;
-}
-
-tr[class="y-m-d"] button{
-    font-size:40px;
-    background-color: rgb(245, 177, 208);
-    border-color: rgb(205, 65, 96);
-    border-radius: 30px;
-    border-style: groove;
-}
 
 div[class="memo"] {
     background-color: #dddddd;
@@ -80,7 +44,82 @@ div[class="memo"] {
     border-color: rgb(205, 65, 96);
 }
 
+
+
+/*m3_content_1.html*/
+td {
+    width: 100px;
+    height: 70px;
+    font-size: 35px;
+}
+
+.Calendar { 
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.Calendar>thead>tr:first-child>td { font-weight: bold; }
+
+.Calendar>thead>tr:last-child>td {
+    background-color: rgb(205, 65, 96);
+    color: white;
+    border-radius: 20px;
+}        
+
+.pastDay{ background-color: lightgray; border-radius: 20px; }
+
+.today{            
+    background-color: rgb(245, 177, 208);            
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.futureDay{            
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.futureDay.choiceDay, .today.choiceDay{            
+    background-color: #ffdacd;            
+    color: #fff;
+    cursor: pointer;
+}
+
+.go_today {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(245, 177, 208);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go_today input {
+    border-style: none;
+    background-color: rgb(245, 177, 208);
+    cursor: pointer;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 24px;
+}
+
+
 /* m3_content_2.html */
+
+#ani_input {
+    font-size: 25px;
+    background-color: #ffdacd;
+    text-align: center;
+}
+
+#ani_input div:nth-child(1) {
+    font-size: 20px;
+}
+#ani_input div:nth-child(2) {
+    background-color: burlywood;
+}
+
 div[class="annivers"] {
     display: flex;
     border-style: solid;
@@ -97,8 +136,15 @@ div[class="annivers"]>div:nth-child(1) {
 }
 
 div[class="annivers"]>div:nth-child(2) {
-    width: 75%;
+    width: 45%;
     background: rgb(205, 65, 96);
+    font-size: 30px;
+    text-align: center;
+}
+
+div[class="annivers"]>div:nth-child(3) {
+    width: 75%;
+    background: rgb(170, 65, 96);
     font-size: 30px;
     text-align: center;
     border-top-right-radius: 30px;

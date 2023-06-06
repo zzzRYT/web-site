@@ -270,3 +270,8 @@ ul[class="main-nav"] li:hover{
 #love {
   font-size: 55px;
 }
+
+#name1, #name2 {
+  font-size: 30px;
+  text-align: center;
+}
