@@ -25,7 +25,8 @@ function day_night() {
 const dayBotton = document.getElementById("night_day");
 dayBotton.addEventListener("click", m1_day_night);
 
-// function m1_day_night() {
-//   document.querySelector("iframe").contentWindow.document("body").style.color =
-//     "white";
-// }
+function m1_day_night() {
+  document.querySelector("iframe").contentWindow.document("body").style.color =
+    "white";
+  document.querySelector("");
+}
